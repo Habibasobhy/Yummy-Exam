@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Exam</title>
+
+    <!-- Logo -->
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bree+Serif&family=Heebo:wght@400;500;600&family=Inter:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Noto+Sans:wght@300&family=Nunito:wght@200;400&family=Open+Sans:wght@400;500;600;700;800&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:wght@300;400;500;600;700&family=Righteous&family=Roboto:wght@300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,300;0,400;1,300&family=Source+Sans+3:wght@300;700&family=Source+Serif+4&family=Space+Mono:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+
+    <!-- min css -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <!-- & START LOADING & -->
+
+    <div class="loading top-0 start-0 end-0 bottom-0 position-fixed justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+
+    <!-- & END LOADING & -->
+
+    <!-- ^====================================================^ -->
+
+    <!-- & START SideBar & -->
+    <div class="sideBar min-vh-100 d-flex">
+        <div class="sideBar-content p-4 d-flex flex-column justify-content-between bg-black">
+            <div class="sideBar-links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li id="Search">Search</li>
+                    <li id="Categories">Categories</li>
+                    <li id="Area">Area</li>
+                    <li id="Ingredients">Ingredients</li>
+                    <li id="Contact">Contact Us</li>
+                </ul>
+            </div>
+            <div class="sideBar-footer">
+                <div class="sideBar-footer-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+            </div>
+        </div>
+        <div class="sideBar-icons d-flex flex-column justify-content-between text-center py-4 px-2 bg-white">
+            <img src="./Images/logo.png" alt="logo">
+            <i class="fa-solid fa-x fa-2x closeIcon"></i>
+            <i class="fa-solid fa-bars openSideBar fa-2x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <!-- & END SideBar & -->
+
+    <!-- ^====================================================^ -->
+
+     <!-- & START Search & -->
+
+    <div class="container w-75" id="searchContainer">
+        <div class="row py-4">
+            <div class="col-md-6">
+                <input type="text" id="searchByName" class="form-control bg-transparent text-white" placeholder="Search By Name">
+            </div>
+            <div class="col-md-6">
+                <input type="text" id="searchByFirstLetter" maxlength="1" class="form-control bg-transparent text-white" placeholder="Search By First Letter">
+            </div>
+        </div>
+    </div>
+
+    <!-- & END Search & -->
+
+    <!-- ^====================================================^ -->
+
+    <!-- & START Main & -->
+    <div class="inner-loading position-fixed top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <div class="main min-vh-100" id="mainData">
+        <div class="container">
+            <div class="row py-5 g-4" id="rowData">
+                
+              
+            </div>
+        </div>
+    </div>
+    <!-- & End Main & -->
+
+    <!-- ^====================================================^ -->
+
+    <!-- & START CONTACT & -->
+    <div class="contact min-vh-100 align-items-center justify-content-center">
+        <div class="container w-75 text-center">
+            <div class="row pb-4 g-4">
+                <div class="col-md-6">
+                    <input type="text" id="nameInput" class="form-control" placeholder="Enter Your Name">
+                    <div class="nameAlert alert alert-danger mt-2">
+                        Special characters and numbers not allowed
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" id="emailInput" class="form-control" placeholder="Enter Your Email">
+                    <div class="emailAlert alert alert-danger mt-2">
+                        Email not valid *exemple@yyy.zzz
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="phoneInput" class="form-control" placeholder="Enter Your Phone">
+                    <div class="phoneAlert alert alert-danger mt-2">
+                        Enter Valid Phone Number (+### ###########)
+                        <br>
+                        (+###) is the area code and it is optional
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" id="ageInput" class="form-control" placeholder="Enter Your Age">
+                    <div class="ageAlert alert alert-danger mt-2">
+                        Enter valid Age
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" id="passwordInput" class="form-control" placeholder="Enter Your password">
+                    <div class="passwordAlert alert alert-danger mt-2">
+                        Enter valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" id="rePasswordInput" class="form-control" placeholder="Repassword">
+                    <div class="rePasswordAlert alert alert-danger mt-2">
+                        Enter valid password
+                    </div>
+                </div>
+            </div>
+            <button disabled class="btn btn-outline-danger submitBtn">Submit</button>
+        </div>
+    </div>
+
+    <!-- & END CONTACT & -->
+   
+
+
+
+    <!-- =======> link bootstrap js -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+
+    <!-- =======> link jQuery -->
+    <script src="./JS/jquery-3.7.0.min.js"></script>
+
+    <!-- =======> link main js -->
+    <script src="./JS/main.js"></script>
+</body>
+</html>

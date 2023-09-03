@@ -1,0 +1,128 @@
+body{
+  background-color: #0D0D0D;
+  color: #fff;
+  overflow: hidden;
+}
+
+
+/* & Start Loading & */
+
+.loading{
+  z-index: 9999;
+  background-color: #0D0D0D;
+  display: flex;
+}
+
+.inner-loading{
+  z-index: 9;
+  background-color: #0D0D0D;
+  display: flex;
+}
+
+/* & Start Loading & */
+
+/* ^==============================================================^ */
+
+/* & Start SideBar Style & */
+
+.sideBar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.sideBar .sideBar-content .sideBar-links ul li{
+  padding-block: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.sideBar .sideBar-content .sideBar-footer .sideBar-footer-icons i{
+  cursor: pointer;
+}
+
+.sideBar .sideBar-icons img{
+  width: 50px;
+  vertical-align: middle;
+}
+
+.sideBar .sideBar-icons i{
+  color: #000;
+  cursor: pointer;
+}
+
+.sideBar .sideBar-icons .closeIcon{
+  display: none;
+}
+
+/* & End SideBar Style & */
+
+/* ^==============================================================^ */
+
+/* & Start Main Style & */
+
+.main .meal{
+  cursor: pointer;
+}
+
+.main .meal .meal-layer{
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: .5s;
+}
+
+.main .meal:hover .meal-layer{
+  top: 0;
+}
+
+.main .source:focus{
+  border: 4.9px solid #24533D;
+  border-radius: 7.5px;
+}
+
+.main .youtube:focus{
+  border: 4.9px solid #773037;
+  border-radius: 7.5px;
+}
+
+/* & End Main Style & */
+
+/* & Start Search Style & */
+
+#searchContainer{
+  display: none;
+}
+
+#searchContainer input::placeholder{
+  color: rgb(108, 117, 125) !important;
+}
+/* & End Search Style & */
+
+/* ^==============================================================^ */
+
+/* & Start Contact & */
+.contact{
+  display: none;
+}
+
+.contact::placeholder{
+  color: #6C757D;
+}
+
+.contact .nameAlert,
+.contact .emailAlert,
+.contact .phoneAlert,
+.contact .ageAlert,
+.contact .passwordAlert,
+.contact .rePasswordAlert{
+  display: none;
+}
+
+@media screen and (min-width:992px) {
+  .contact .container{
+    padding-inline: 100px;
+  }
+}
+/* & End Contact & */
